@@ -1,0 +1,16 @@
+.hero {
+    @include flex-c-c;
+    flex-direction: column;
+    background-image: url("/images/bg-pattern-intro.svg"), linear-gradient($hero-gradient);
+    background-size: 300%;
+    background-position: 35% 35%;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0 0 0 8rem;
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+}

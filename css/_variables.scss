@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$heading-text: "Overpass", sans-serif;
+$body-text: "Ubuntu", sans-serif;
+
+$cta-text-color: hsl(356, 100%, 66%);
+$cta-bg-onhover: hsl(355, 100%, 74%);
+$main-text-color: hsl(208, 49%, 24%);
+$body-text-color: hsl(207, 13%, 34%);
+$footer-text: hsl(240, 2%, 79%);
+$footer-bg: hsl(240, 10%, 16%);
+$white: hsl(0, 0%, 100%);
+$light-gray: rgba(239,239,241,255);
+$mobile-link-color: hsl(206, 16%, 41%);
+
+$hero-gradient: hsl(13, 100%, 72%), hsl(353, 100%, 62%);
+$banner-gradient: hsl(237, 17%, 21%), hsl(237, 23%, 32%);
+

@@ -1,0 +1,149 @@
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "hero";
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+//global classes
+.heading-text {
+    font-family: $heading-text;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $main-text-color;
+
+    &--white {
+        color: $white;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    &--centered {
+        text-align: center;
+    }
+}
+
+.body-text {
+    font-family: $heading-text;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: $body-text-color;
+
+    &--white {
+        color: $white;
+    }
+
+    &--gray {
+        color: $footer-text;
+    }
+}
+
+.button {
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-family: $body-text;
+    font-weight: 600;
+    font-size: .9rem;
+    background: none;
+    color: $main-text-color;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: .5rem;
+    }
+
+    &--primary {
+        color: $cta-text-color;
+        background: $white;
+    }
+
+    &--secondary {
+        color: $white;
+        border: 1px solid $white;
+        background: none;
+    }
+
+    &--signup {
+        color: $white;
+        background: linear-gradient(to right, $hero-gradient);
+        padding: 1rem 2rem;
+    }
+}
+
+.container {
+    padding: 4rem 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        
+        &--right {
+            order: 0;
+        }
+
+        &--abs {
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+        }
+    }
+
+    &__abs-image-holder {
+        margin-bottom: 3rem;
+    }
+}
+
+.text-block {
+    text-align: center;
+    order: 1;
+
+    &__wrapper {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.banner {
+    background-image: url("/images/bg-pattern-circles.svg"), linear-gradient($banner-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  
+    top -260px center,
+    center;
+    padding: 0 2rem;
+    height: 600px;
+    position: relative;
+    margin-top: 10rem;
+    border-radius: 0 8rem 0 8rem;
+    @include flex-c-c;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding: 1rem;
+
+    a { color: hsl(228, 45%, 44%); }
+}

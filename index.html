@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr Landing Page</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="/" class="nav__logo">
+            <img src="images/logo.svg" alt="blogr" class="nav__logo-img">
+        </a>
+
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">Product
+                    <i class="fas fa-angle-down nav__caret"></i>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Overview</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Pricing</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Marketplace</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Features</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Integrations</a>
+                        </li>
+                    </ul>
+                </li>
+                
+
+                <li class="nav__item">Company
+                    <i class="fas fa-angle-down nav__caret"></i>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Team</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Careers</a>
+                        </li>
+                    </ul>
+                </li>
+                
+
+                <li class="nav__item">Connect
+                    <i class="fas fa-angle-down nav__caret"></i>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">Newsletter</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </li>                
+            </ul>
+
+            <hr class="nav__divider">
+
+            <div class="nav__wrapper">
+                <li class="nav__item nav__item--login">Login</li>
+                <button class="button button--signup">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="nav__toggle">
+            <span class="nav__burger nav__burger--first"></span>
+            <span class="nav__burger nav__burger--mid"></span>
+            <span class="nav__burger nav__burger--last"></span>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero__text">
+            <h1 class="heading-text heading-text--white">A modern publishing platform</h1>
+            <p class="body-text body-text--white">
+                Grow your audience and build your online brand
+            </p>
+        </div>
+
+        <div class="cta-buttons">
+            <button class="button button--primary">Start for Free</button>
+            <button class="button button--secondary">Learn More</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="heading-text heading-text--centered">Designed for the future</h1>
+
+        <div class="grid">
+            <div class="text-block">
+                <div class="text-block__wrapper">
+                    <h1 class="heading-text">Introducing an extensible editor</h1>
+                    <p class="body-text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                </div>
+
+                <div class="text-block__wrapper">
+                    <h1 class="heading-text">Robust content management</h1>
+                    <p class="body-text">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                </div>
+            </div>
+
+            <img src="images/illustration-editor-mobile.svg" alt="illustration" class="grid__img grid__img--right">
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="grid">
+            <div class="grid__abs-image-holder">
+                <img src="images/illustration-phones.svg" alt="illustration" class="grid__img grid__img--abs">
+            </div>
+
+            <div class="text-block">
+                <h1 class="heading-text heading-text--white">State of the Art Infrastructure</h1>
+                <p class="body-text body-text--gray">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

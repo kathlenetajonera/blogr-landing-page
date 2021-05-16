@@ -1,0 +1,140 @@
+.nav {
+    @include flex-sb-c;
+    padding: 3rem 2rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    $nav: &;
+
+    &--active {
+        #{ $nav }__burger--first {
+            transform: rotate(45deg);
+        }
+
+        #{ $nav }__burger--mid {
+            opacity: 0;
+        }
+
+        #{ $nav }__burger--last {
+            transform: rotate(-45deg);
+        }
+
+        #{ $nav }__menu {
+            left: 50%;
+            opacity: 1;
+        } 
+    }
+
+    &__logo-img {
+        display: block;
+    }
+
+    &__toggle {
+        cursor: pointer;
+    }
+
+    &__burger {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        transition: .2s ease;
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+        &--first {
+            transform-origin: 2px 2px;
+        }
+
+        &--last {
+            transform-origin: 2px 0;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: 120px;
+        left: -100%;
+        width: 90%;
+        background-color: $white;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        transition: .2s ease;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    &__list, &__dropdown {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        font-family: $heading-text;
+        font-weight: 600;
+        color: $main-text-color;
+        padding: .8rem;
+        cursor: pointer;
+
+        &--active {
+            #{ $nav }__dropdown {
+                max-height: 300px;
+                padding: 1rem;
+            }
+
+            #{ $nav }__caret {
+                transform: rotate(180deg);
+            }
+
+            #{ $nav }__link {
+                opacity: 1;
+            }
+        }
+
+        &--login {
+            list-style: none;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &__caret {
+        color: $cta-bg-onhover;
+        margin-left: .4rem; 
+        transition: .2s ease-out;
+    }
+
+    &__dropdown {
+        background-color: $light-gray;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: .5rem;
+        transition: .2s ease-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__dropdown-item {
+        padding: .5rem 0;
+    }
+
+    &__link {
+        font-family: $heading-text;
+        font-size: .9rem;
+        font-weight: 600;
+        color: $mobile-link-color;
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
