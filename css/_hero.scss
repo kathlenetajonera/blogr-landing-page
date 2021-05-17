@@ -1,14 +1,20 @@
 .hero {
     @include flex-c-c;
     flex-direction: column;
-    background-image: url("/images/bg-pattern-intro.svg"), linear-gradient($hero-gradient);
+    background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(340deg, $hero-gradient);
     background-size: 300%;
     background-position: 35% 35%;
     background-repeat: no-repeat;
     min-height: 550px;
     text-align: center;
     padding: 2rem;
-    border-radius: 0 0 0 8rem;
+    border-radius: 0 0 0 6rem;
+
+    @include media-query(tablet) {
+        background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(220deg, $hero-gradient);
+        background-size: 200%;
+        background-position: 17% 53%;
+    }
 
     &__text {
         margin-bottom: 2rem;

@@ -1,10 +1,16 @@
 .nav {
     @include flex-sb-c;
-    padding: 3rem 2rem 0;
+    padding: 3rem 0 0;
     position: absolute;
-    width: 100%;
+    width: Min(1120px, 85%);
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     $nav: &;
+
+    @include media-query(tablet) {
+        padding: 1rem 0;
+    }
 
     &--active {
         #{ $nav }__burger--first {
@@ -27,10 +33,18 @@
 
     &__logo-img {
         display: block;
+
+        @include media-query(tablet) {
+            margin-right: 1rem;
+        }
     }
 
     &__toggle {
         cursor: pointer;
+
+        @include media-query(tablet) {
+            display: none;
+        }
     }
 
     &__burger {
@@ -57,7 +71,7 @@
         position: absolute;
         top: 120px;
         left: -100%;
-        width: 90%;
+        width: 100%;
         background-color: $white;
         border-radius: .5rem;
         text-align: center;
@@ -65,6 +79,21 @@
         transition: .2s ease;
         transform: translateX(-50%);
         opacity: 0;
+
+        @include media-query(tablet) {
+            position: initial;
+            background-color: transparent;
+            transform: none;
+            transition: none;
+            opacity: 1;
+            @include flex-sb-c;
+        }
+    }
+
+    &__list {
+        @include media-query(tablet) {
+            display: flex;
+        }
     }
 
     &__list, &__dropdown {
@@ -79,6 +108,11 @@
         color: $main-text-color;
         padding: .8rem;
         cursor: pointer;
+
+        @include media-query(tablet) {
+            color: $white;
+            font-size: .88rem;
+        }
 
         &--active {
             #{ $nav }__dropdown {
@@ -108,6 +142,10 @@
         color: $cta-bg-onhover;
         margin-left: .4rem; 
         transition: .2s ease-out;
+
+        @include media-query(tablet) {
+            color: $white;
+        } 
     }
 
     &__dropdown {
@@ -132,9 +170,19 @@
         text-decoration: none;
     }
 
+    &__divider {
+        @include media-query(tablet) {
+            display: none;
+        } 
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include media-query(tablet) {
+            flex-direction: row;
+        }
     }
 }

@@ -24,6 +24,10 @@ body {
     line-height: 2rem;
     color: $main-text-color;
 
+    @include media-query(tablet) {
+        font-size: 1.4rem;
+    }
+
     &--white {
         color: $white;
         font-size: 2.2rem;
@@ -33,6 +37,22 @@ body {
     &--centered {
         text-align: center;
     }
+
+    &--lg {
+        @include media-query(tablet) {
+            font-size: 2.5rem;
+        }
+
+        @include media-query(desktop-sm) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &--md {
+        @include media-query(tablet) {
+            font-size: 2rem;
+        }
+    }
 }
 
 .body-text {
@@ -40,8 +60,16 @@ body {
     line-height: 1.8rem;
     color: $body-text-color;
 
+    @include media-query(tablet) {
+        font-size: .88rem;
+    }
+
     &--landing {
         font-size: 1.1rem;
+
+        @include media-query(tablet) {
+            font-size: 1rem;
+        }
     }
 
     &--white {
@@ -82,26 +110,66 @@ body {
 
     &--signup {
         color: $white;
-        background: linear-gradient(to right, $hero-gradient);
-        padding: 1rem 2rem;
+        background: linear-gradient(300deg, #ff3d54, #ff8f70);
+        padding: .8rem 2rem;
+
+        @include media-query(tablet) {
+            color: $cta-text-color;
+            background: $white;
+            font-size: .88rem;
+        }
     }
 }
 
 .container {
-    padding: 4rem 2rem;
+    padding: 4rem 0;
+
+    // @include media-query(tablet) {
+    //     padding: 4rem 3rem;
+    // }
+
+    // @include media-query(desktop-sm) {
+    //     padding: 4rem;
+    // }
 }
 
 .grid {
     display: grid;
     grid-gap: 2rem;
-    margin: 2rem 0;
+    width: Min(1120px, 85%);
+
+    &--two-col {
+        margin: 4rem auto;
+        align-items: center;
+
+        @include media-query(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &--five-col {
+        margin: 2rem auto;
+
+        @include media-query(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-query(desktop-sm) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 
     &__img {
         display: block;
-        max-width: 100%;
+        width: Min(400px, 100%);
+        margin: 0 auto;
         
         &--right {
             order: 0;
+
+            @include media-query(tablet) {
+                order: 1;
+            }
         }
 
         &--abs {
@@ -109,18 +177,40 @@ body {
             top: -200px;
             left: 50%;
             transform: translateX(-50%);
-            width: 400px;
+
+            @include media-query(tablet) {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%) scale(1);
+            }
+
+            @include media-query(desktop-sm) {
+                left: 4rem;
+                transform: translateY(-50%) scale(1.3);
+            }
+
+            @include media-query(desktop-md) {
+                left: 9rem;
+            }
         }
     }
 
     &__abs-image-holder {
         margin-bottom: 3rem;
+
+        @include media-query(tablet) {
+            margin-bottom: 0;
+        }
     }
 }
 
 .text-block {
     text-align: center;
     order: 1;
+
+    @include media-query(tablet) {
+        text-align: left;
+    }
 
     &__wrapper {
         &:not(:last-child) {
@@ -136,16 +226,35 @@ body {
     background-position:  
     top -260px center,
     center;
-    padding: 0 2rem;
+    // padding: 0 2rem;
     height: 600px;
     position: relative;
     margin-top: 10rem;
-    border-radius: 0 8rem 0 8rem;
+    border-radius: 0 6rem 0 6rem;
     @include flex-c-c;
+
+    @include media-query(tablet) {
+        height: initial;
+        padding: 3rem 2rem;
+        background-position: 
+        top -260px left -150px, 
+        center;
+        margin-top: 0;
+    }
+
+    @include media-query(desktop-sm) {
+        margin: 5rem 0;
+        padding: 5rem 2rem;
+    }
+
+    .grid--two-col {
+        margin: 0;
+    }
 }
 
 .attribution { 
     font-family: $heading-text;
+    font-weight: 600;
     font-size: 11px; 
     text-align: center;
     padding: 1rem;

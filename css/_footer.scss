@@ -1,10 +1,27 @@
 .footer {
     background-color: $footer-bg;
-    padding: 2rem;
-    border-radius: 0 8rem 0 0;
+    padding: 2rem 0;
+    border-radius: 0 6rem 0 0;
+
+    // @include media-query(tablet) {
+    //     padding: 2rem 3rem;
+    // }
+
+    // @include media-query(desktop-sm) {
+    //     padding: 2rem 4rem;
+    // }
 
     &__logo {
         margin: 0 auto 2rem;
+
+        @include media-query(tablet) {
+            grid-column: span 3;
+        }
+
+        @include media-query(desktop-sm) {
+            grid-column: initial;
+            margin: 0;
+        }
     }
 
     &__menu {
@@ -12,6 +29,14 @@
         font-family: $heading-text;
         font-weight: 600;
         color: $white;
+
+        @include media-query(tablet) {
+            font-size: .88rem;
+        }
+
+        @include media-query(desktop-sm) {
+            text-align: left;
+        }
     }
 
     &__list {
