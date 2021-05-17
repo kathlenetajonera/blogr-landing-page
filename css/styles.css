@@ -190,6 +190,39 @@
   margin-bottom: 2rem;
 }
 
+.footer {
+  background-color: #25252d;
+  padding: 2rem;
+  border-radius: 0 8rem 0 0;
+}
+
+.footer__logo {
+  margin: 0 auto 2rem;
+}
+
+.footer__menu {
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item {
+  margin: .4rem 0;
+}
+
+.footer__link {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: #c8c8cb;
+  text-decoration: none;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -225,9 +258,12 @@ body {
 
 .body-text {
   font-family: "Overpass", sans-serif;
-  font-size: 1.1rem;
   line-height: 1.8rem;
   color: #4b5862;
+}
+
+.body-text--landing {
+  font-size: 1.1rem;
 }
 
 .body-text--white {
@@ -342,6 +378,7 @@ body {
 }
 
 .attribution {
+  font-family: "Overpass", sans-serif;
   font-size: 11px;
   text-align: center;
   padding: 1rem;

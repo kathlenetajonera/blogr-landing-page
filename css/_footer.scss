@@ -1,0 +1,32 @@
+.footer {
+    background-color: $footer-bg;
+    padding: 2rem;
+    border-radius: 0 8rem 0 0;
+
+    &__logo {
+        margin: 0 auto 2rem;
+    }
+
+    &__menu {
+        text-align: center;
+        font-family: $heading-text;
+        font-weight: 600;
+        color: $white;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin: .4rem 0;
+    }
+
+    &__link {
+        font-family: $heading-text;
+        font-weight: 400;
+        color: $footer-text;
+        text-decoration: none;
+    }
+}

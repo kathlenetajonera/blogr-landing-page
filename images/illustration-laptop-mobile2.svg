@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 327 326" style="enable-background:new 0 0 327 326;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:8.000000e-02;fill-rule:evenodd;clip-rule:evenodd;fill:#2D2E40;enable-background:new    ;}
+	.st1{opacity:0.5;fill:none;stroke:#2D2E40;enable-background:new    ;}
+	.st2{opacity:0.25;fill:none;stroke:#2D2E40;enable-background:new    ;}
+	.st3{filter:url(#a);}
+	.st4{fill:#535353;}
+	.st5{fill:#1D1D25;}
+	.st6{fill:url(#b_7_);}
+	.st7{filter:url(#Adobe_OpacityMaskFilter);}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st9{mask:url(#d_4_);fill:#F9F6F6;}
+	.st10{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st11{mask:url(#d_3_);}
+	.st12{fill:#FFFFFF;}
+	.st13{fill:#E7E7E7;}
+	.st14{opacity:9.800000e-02;}
+	.st15{fill:#4A5166;}
+	.st16{filter:url(#Adobe_OpacityMaskFilter_2_);}
+	.st17{mask:url(#f_2_);fill:#2F2F47;}
+	.st18{fill:#2F2F47;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="221.7%" id="a" width="170.1%" x="-35.1%" y="-60.8%">
+	<feOffset  dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g>
+	<g transform="translate(86 17)">
+		<path class="st0" d="M78.5,259L78.5,259c61.6,0,111.5-49.9,111.5-111.5l0,0C190,85.9,140.1,36,78.5,36l0,0
+			C16.9,36-33,85.9-33,147.5l0,0C-33,209.1,16.9,259,78.5,259z"/>
+		<path class="st1" d="M78,271.5L78,271.5c69.3,0,125.5-56.2,125.5-125.5l0,0c0-69.3-56.2-125.5-125.5-125.5l0,0
+			C8.7,20.5-47.5,76.7-47.5,146l0,0C-47.5,215.3,8.7,271.5,78,271.5z"/>
+		<path class="st2" d="M78,308.5L78,308.5c89.7,0,162.5-72.8,162.5-162.5l0,0c0-89.7-72.8-162.5-162.5-162.5l0,0
+			C-11.7-16.5-84.5,56.3-84.5,146l0,0C-84.5,235.7-11.7,308.5,78,308.5z"/>
+	</g>
+	<g transform="translate(85 85)" class="st3">
+		<path class="st4" d="M-34-10h228c6.6,0,12,5.4,12,12v149c0,6.6-5.4,12-12,12H-34c-6.6,0-12-5.4-12-12V2C-46-4.6-40.6-10-34-10z"/>
+		<path class="st5" d="M-35-8h230c5.5,0,10,4.5,10,10v150c0,5.5-4.5,10-10,10H-35c-5.5,0-10-4.5-10-10V2C-45-3.5-40.5-8-35-8z"/>
+		<g transform="translate(47 15)">
+			<g>
+				
+					<linearGradient id="b_7_" gradientUnits="userSpaceOnUse" x1="15.0169" y1="79.7604" x2="16.0169" y2="79.3163" gradientTransform="matrix(237 0 0 -157.94 -3644 12624.2598)">
+					<stop  offset="0" style="stop-color:#FF8F71"/>
+					<stop  offset="1" style="stop-color:#FF3E55"/>
+				</linearGradient>
+				<path id="b_6_" class="st6" d="M-82-17h231c1.7,0,3,1.3,3,3v151.9c0,1.7-1.3,3-3,3H-82c-1.7,0-3-1.3-3-3V-14
+					C-85-15.7-83.7-17-82-17z"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-85.2" y="11.4" width="237" height="129.7">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="-85.2" y="11.4" width="237" height="129.7" id="d_4_">
+				<g class="st7">
+					<path id="b_5_" class="st8" d="M-82-17h231c1.7,0,3,1.3,3,3v151.9c0,1.7-1.3,3-3,3H-82c-1.7,0-3-1.3-3-3V-14
+						C-85-15.7-83.7-17-82-17z"/>
+				</g>
+			</mask>
+			<path class="st9" d="M-82.2,11.4h231c1.7,0,3,1.3,3,3v123.7c0,1.7-1.3,3-3,3h-231c-1.7,0-3-1.3-3-3V14.4
+				C-85.2,12.7-83.8,11.4-82.2,11.4z"/>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="-51.5" y="0.6" width="170" height="120.6">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="-51.5" y="0.6" width="170" height="120.6" id="d_3_">
+				<g class="st10">
+					<path id="b_4_" class="st8" d="M-82-17h231c1.7,0,3,1.3,3,3v151.9c0,1.7-1.3,3-3,3H-82c-1.7,0-3-1.3-3-3V-14
+						C-85-15.7-83.7-17-82-17z"/>
+				</g>
+			</mask>
+			<g class="st11">
+				<g transform="translate(33.478 17.615)">
+					<path class="st12" d="M-82-17h44c1.7,0,3,1.3,3,3v114.6c0,1.7-1.3,3-3,3h-44c-1.7,0-3-1.3-3-3V-14C-85-15.7-83.7-17-82-17z"/>
+					<path class="st12" d="M-23.5-17H82c1.7,0,3,1.3,3,3v114.6c0,1.7-1.3,3-3,3H-23.5c-1.7,0-3-1.3-3-3V-14
+						C-26.5-15.7-25.2-17-23.5-17z"/>
+					<path class="st13" d="M-18.8-10.6h96c1.7,0,3,1.3,3,3v22.3c0,1.7-1.3,3-3,3h-96c-1.7,0-3-1.3-3-3V-7.6
+						C-21.8-9.3-20.4-10.6-18.8-10.6z"/>
+					<path class="st13" d="M-18.8,23.6H5.5c1.7,0,3,1.3,3,3v22.3c0,1.7-1.3,3-3,3h-24.3c-1.7,0-3-1.3-3-3V26.6
+						C-21.8,24.9-20.4,23.6-18.8,23.6z"/>
+					<path class="st13" d="M19,23.6h58.3c1.7,0,3,1.3,3,3v22.3c0,1.7-1.3,3-3,3H19c-1.7,0-3-1.3-3-3V26.6C16,24.9,17.3,23.6,19,23.6
+						z"/>
+				</g>
+			</g>
+		</g>
+		<g transform="translate(164)" class="st14">
+			<path class="st15" d="M-84.5-17h5.1c0.3,0,0.5,0.2,0.5,0.5l0,0c0,0.3-0.2,0.5-0.5,0.5h-5.1c-0.3,0-0.5-0.2-0.5-0.5l0,0
+				C-85-16.8-84.8-17-84.5-17z"/>
+			<path class="st15" d="M-76.9-17h0.4c0.3,0,0.5,0.2,0.5,0.5l0,0c0,0.3-0.2,0.5-0.5,0.5h-0.4c-0.3,0-0.5-0.2-0.5-0.5l0,0
+				C-77.4-16.8-77.2-17-76.9-17z"/>
+		</g>
+		<g transform="translate(0 178)">
+			<g>
+				<path id="e_4_" class="st15" d="M-85-17"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="52.2" y="-35.6" width="53.6" height="23.2">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="52.2" y="-35.6" width="53.6" height="23.2" id="f_2_">
+				<g class="st16">
+					<path id="e_3_" class="st15" d="M-85-17"/>
+				</g>
+			</mask>
+			<path class="st17" d="M62.2-35.6h33.6c5.5,0,10,4.5,10,10v3.2c0,5.5-4.5,10-10,10H62.2c-5.5,0-10-4.5-10-10v-3.2
+				C52.2-31.1,56.7-35.6,62.2-35.6z"/>
+		</g>
+		<path class="st18" d="M-85-17"/>
+	</g>
+</g>
+</svg>

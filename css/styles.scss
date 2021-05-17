@@ -2,6 +2,7 @@
 @import "mixins";
 @import "nav";
 @import "hero";
+@import "footer";
 
 html {
     box-sizing: border-box;
@@ -36,9 +37,12 @@ body {
 
 .body-text {
     font-family: $heading-text;
-    font-size: 1.1rem;
     line-height: 1.8rem;
     color: $body-text-color;
+
+    &--landing {
+        font-size: 1.1rem;
+    }
 
     &--white {
         color: $white;
@@ -141,6 +145,7 @@ body {
 }
 
 .attribution { 
+    font-family: $heading-text;
     font-size: 11px; 
     text-align: center;
     padding: 1rem;
