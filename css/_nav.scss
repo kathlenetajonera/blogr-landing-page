@@ -2,7 +2,7 @@
     @include flex-sb-c;
     padding: 3rem 0 0;
     position: absolute;
-    width: Min(1120px, 85%);
+    width: Min(70rem, 85%);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -107,21 +107,31 @@
         font-weight: 600;
         color: $main-text-color;
         padding: .8rem;
+        position: relative;
         cursor: pointer;
 
         @include media-query(tablet) {
-            color: $white;
+            color: $light-gray;
             font-size: .88rem;
+
+            &:hover, &--active {
+                color: $white;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
         }
 
         &--active {
             #{ $nav }__dropdown {
                 max-height: 300px;
-                padding: 1rem;
             }
 
             #{ $nav }__caret {
                 transform: rotate(180deg);
+                
+                @include media-query(tablet) {
+                    color: $white;
+                }
             }
 
             #{ $nav }__link {
@@ -144,7 +154,7 @@
         transition: .2s ease-out;
 
         @include media-query(tablet) {
-            color: $white;
+            color: $light-gray;
         } 
     }
 
@@ -156,10 +166,19 @@
         transition: .2s ease-out;
         max-height: 0;
         overflow: hidden;
+        padding: 0 1rem;
+
+        @include media-query(tablet) {
+            background-color: $white;
+            width: 140px;
+            text-align: left;
+            position: absolute;
+            top: 3.5rem;
+        }
     }
 
     &__dropdown-item {
-        padding: .5rem 0;
+        margin: 1rem 0;
     }
 
     &__link {
@@ -168,6 +187,17 @@
         font-weight: 600;
         color: $mobile-link-color;
         text-decoration: none;
+        display: block;
+
+        @include media-query(tablet) {
+            font-size: .88rem;
+            font-weight: 400;
+        }
+
+        &:hover {
+            font-weight: 600;
+            color: $footer-bg;
+        }
     }
 
     &__divider {

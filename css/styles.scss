@@ -28,6 +28,10 @@ body {
         font-size: 1.4rem;
     }
 
+    @include media-query(desktop-sm) {
+        font-size: 1.6rem;
+    }
+
     &--white {
         color: $white;
         font-size: 2.2rem;
@@ -91,6 +95,7 @@ body {
     font-size: .9rem;
     background: none;
     color: $main-text-color;
+    transition: .2s ease-out;
     cursor: pointer;
 
     &:not(:last-child) {
@@ -100,12 +105,22 @@ body {
     &--primary {
         color: $cta-text-color;
         background: $white;
+
+        &:hover {
+            color: $white;
+            background: $cta-bg-onhover;
+        }
     }
 
     &--secondary {
         color: $white;
         border: 1px solid $white;
         background: none;
+
+        &:hover {
+            color: $cta-bg-onhover;
+            background: $white;
+        }
     }
 
     &--signup {
@@ -117,26 +132,35 @@ body {
             color: $cta-text-color;
             background: $white;
             font-size: .88rem;
+
+            &:hover {
+                color: $white;
+                background: $cta-bg-onhover;
+            }
         }
     }
 }
 
 .container {
     padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
 
-    // @include media-query(tablet) {
-    //     padding: 4rem 3rem;
-    // }
+    @include media-query(desktop-md) {
+        padding: 9rem 0;
+    }
 
-    // @include media-query(desktop-sm) {
-    //     padding: 4rem;
-    // }
+    &--no-padding {
+        @include media-query(desktop-md) {
+            padding: 0;
+        }
+    }
 }
 
 .grid {
     display: grid;
     grid-gap: 2rem;
-    width: Min(1120px, 85%);
+    width: Min(70rem, 85%);
 
     &--two-col {
         margin: 4rem auto;
@@ -159,47 +183,50 @@ body {
         }
     }
 
+    &--margin-top-md {
+        @include media-query(desktop-md) {
+            margin-top: 6rem;
+        }
+    }
+
     &__img {
         display: block;
-        width: Min(400px, 100%);
+        width: Min(25rem, 100%);
         margin: 0 auto;
+
+        &--left {
+            @include media-query(tablet) {
+                width: Min(43.75rem, 200%);
+                position: relative;
+                left: -300px;
+            }
+    
+            @include media-query(desktop-md) {
+                width: 200%;
+                left: -500px;
+            }
+        }
         
         &--right {
             order: 0;
 
             @include media-query(tablet) {
                 order: 1;
-            }
-        }
-
-        &--abs {
-            position: absolute;
-            top: -200px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @include media-query(tablet) {
+                position: absolute;
+                width: 750px;
+                right: -400px;
                 top: 50%;
-                left: 0;
-                transform: translateY(-50%) scale(1);
+                transform: translateY(-50%);
             }
 
             @include media-query(desktop-sm) {
-                left: 4rem;
-                transform: translateY(-50%) scale(1.3);
+                right: -300px;
             }
 
             @include media-query(desktop-md) {
-                left: 9rem;
+                width: 850px;
+                right: -250px;
             }
-        }
-    }
-
-    &__abs-image-holder {
-        margin-bottom: 3rem;
-
-        @include media-query(tablet) {
-            margin-bottom: 0;
         }
     }
 }
@@ -226,7 +253,6 @@ body {
     background-position:  
     top -260px center,
     center;
-    // padding: 0 2rem;
     height: 600px;
     position: relative;
     margin-top: 10rem;
@@ -245,6 +271,37 @@ body {
     @include media-query(desktop-sm) {
         margin: 5rem 0;
         padding: 5rem 2rem;
+    }
+
+    &__img-container {
+        margin-bottom: 3rem;
+
+        @include media-query(tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        width: Min(25rem, 100%);
+        position: absolute;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include media-query(tablet) {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) scale(1);
+        }
+
+        @include media-query(desktop-sm) {
+            left: 4rem;
+            transform: translateY(-50%) scale(1.3);
+        }
+
+        @include media-query(desktop-md) {
+            left: 9rem;
+        }
     }
 
     .grid--two-col {
